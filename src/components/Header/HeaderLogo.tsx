@@ -1,10 +1,13 @@
-import React, {useState} from 'react';
+import React, {useContext} from 'react';
+import {UserContext} from "../../context/UserContext";
 
 function HeaderLogo() {
 
+    const user: boolean = useContext(UserContext);
+
     return (
         <div>
-            <p>Logo Brand</p>
+            {user ? <p>Logo Username</p> : <p>Logo Brand</p>}
         </div>
     );
 }

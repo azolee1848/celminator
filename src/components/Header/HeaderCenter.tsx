@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import HeaderMenu from "./HeaderMenu";
+import {UserContext} from "../../context/UserContext";
 
 function HeaderCenter() {
+
+    const user: boolean = useContext(UserContext);
+
     return (
-        <div>
-            <p>Center</p>
-        </div>
+        <>
+            {user ? <HeaderMenu/> : <p>Motivational message.</p> }
+        </>
     );
 }
 

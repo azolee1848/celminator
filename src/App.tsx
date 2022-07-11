@@ -1,4 +1,5 @@
 import React from 'react';
+import {UserContext} from "./context/UserContext";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Login from "./components/Content/Login/Login";
 import Goals from './components/Content/Goals/Goals';
@@ -12,13 +13,14 @@ import './App.css';
 
 function App() {
 
-    const userLoggedIn: Boolean = false;
+    const user: boolean = true;
 
   return (
     <div className="App">
+        <UserContext.Provider value={user} >
         <BrowserRouter>
             <Routes>
-                {userLoggedIn ? <Route index element={<Goals />} /> : <Route index element={<Login/>} />}
+                <Route index element={user ? <Goals /> : <Login/>} />
                 <Route path="results" element={<Results/>} />
                 <Route path="inspiration" element={<Inspiration/>} />
                 <Route path="motivation" element={<Motivation/>} />
@@ -27,6 +29,7 @@ function App() {
                 <Route path="*" element={<Error404/>} />
             </Routes>
         </BrowserRouter>
+        </UserContext.Provider>
     </div>
   );
 }

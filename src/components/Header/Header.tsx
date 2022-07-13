@@ -9,11 +9,11 @@ function Header() {
     const user: boolean = useContext(UserContext);
 
     return (
-        <div>
+        <header className="d-flex flex-row justify-content-between align-items-center text-primary bg-light">
             <HeaderLogo/>
             <HeaderCenter/>
             {user ? <HeaderLogout/> : null}
-        </div>
+        </header>
     );
 }
 

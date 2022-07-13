@@ -1,3 +1,5 @@
+/* Generics */
+
 * {
   box-sizing: inherit;
 }
@@ -7,5 +9,45 @@ html {
 }
 
 body {
-  padding: 20px;
+  background-color: dimgrey;
+}
+
+/* Header */
+
+header {
+  font-size: 1rem;
+  height: 2rem;
+}
+
+#logo {
+  width: 10rem;
+}
+
+#logo__image {
+  width: 1rem;
+  height: 1rem;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.menu__item {
+  display: inline;
+  margin: 1rem;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+footer {
+  font-size: 0.8rem;
+  height: 2rem;
 }

@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 
 function HeaderMenu() {
     return (
-        <nav className="d-flex align-items-center">
+        <nav className="headerMenu">
             <ul id="menu">
                 <NavLink className="menu__item" to="/">Céljaim</NavLink>
                 <NavLink className="menu__item" to="/results">Eredményeim</NavLink>

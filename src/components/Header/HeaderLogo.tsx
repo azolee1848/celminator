@@ -7,18 +7,22 @@ function HeaderLogo() {
     const user: boolean = useContext(UserContext);
 
     return (
-        <>
-            {user ?
-                <div className="bg-light d-flex align-items-center mx-2">
-                    <img id="logo__image" src={logo} alt=""/>
-                    <span className="text-primary mx-1">Zoltán</span>
-                </div> :
-                <div className="bg-light d-flex align-items-center">
-                    <img id="logo__image" src="../../images/target.png" alt=""/>
-                    <span className="text-primary">Célminátor</span>
-                </div>
-            }
-        </>
+      <>
+        {user ? (
+          <div id="logo">
+            <a href="/">
+              <img id="logo__image" src={logo} alt="Logo image."/>
+            </a>
+            <a href="/">
+              <span className="userNameShort">Zoltán</span>
+            </a>
+          </div>
+        ) : (
+          <div>
+            <span className="">Célminátor</span>
+          </div>
+        )}
+      </>
     );
 }
 

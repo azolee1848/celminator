@@ -2,8 +2,10 @@ import React from 'react';
 
 function Footer() {
     return (
-        <footer className="d-flex flex-row justify-content-center align-items-center text-primary bg-light">
-            <span>Arnóczky Zoltán &copy; 2022</span>
+        <footer className="text-primary bg-light">
+            <a className="textDecorationNone" href="https://azoweb.hu">
+                <span>Arnóczky Zoltán &copy; 2022</span>
+            </a>
         </footer>
     );
 }

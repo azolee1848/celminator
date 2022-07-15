@@ -3,7 +3,7 @@ import React from 'react';
 function HeaderLogout() {
     return (
         <div id="logout">
-            <a className="textDecorationNone" href={"/"} >Logout</a>
+            <a className="textDecorationNone" href={"/"} >Kijelentkezés</a>
         </div>
     );
 }

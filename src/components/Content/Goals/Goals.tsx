@@ -8,7 +8,7 @@ function Goals() {
     <>
       <Header />
       <main className="d-flex flex-wrap text-light bg-secondary p-5 goalsContainer">
-            <h1 id="goalsTitle">Goals</h1>
+            <h1 id="goalsTitle">Céljaim</h1>
             <GoalsStripes />
       </main>
       <Footer />

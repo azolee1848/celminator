@@ -10,17 +10,17 @@ function GoalsStripe(GoalsStripeProps: GoalsStripeProps) {
 
     return (
         <>
-            <div className="goalStripeContainer">
+            <div className="goalsStripeContainer">
                 { circle &&
-                    (<div className="goalStripeOuterCircle">
-                    <div className="goalStripeInnerCircle">
-                        <span className="goalStripeInnerNumber">{number}</span>
+                    (<div className="goalsStripeOuterCircle">
+                    <div className="goalsStripeInnerCircle">
+                        <span className="goalsStripeInnerNumber">{number}</span>
                     </div>
                     </div>)
                 }
-                <img className={circle ? "goalStripeHeadConcaveGraphic" : "goalStripeConcaveGraphic"} src={concave} alt=""/>
-                <div className={circle ? "goalStripeContent goalStripeHead" : "goalStripeContent"}>
-                    <span className="goalStripeText">{text}</span>
+                <img className={circle ? "goalsStripeHeadConcaveGraphic" : "goalsStripeConcaveGraphic"} src={concave} alt=""/>
+                <div className={circle ? "goalsStripeContent goalsStripeHead" : "goalsStripeContent"}>
+                    <span className="goalsStripeText">{text}</span>
                 </div>
             </div>
         </>

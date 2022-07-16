@@ -1,16 +1,16 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import Header from "../../Header/Header";
 import Footer from "../../Footer/Footer";
+import ResultsCounters from "./ResultsCounters";
 
 function Results() {
   return (
     <>
       <Header />
-      <main className="d-flex text-light bg-secondary p-5">
-        <p>Results</p>
-        <NavLink to="/">Vissza</NavLink>
-      </main>
+          <main className="mediaContainer text-light flex-column">
+                <h1 className={"pageTitle"}>Eddig elért eredményeim</h1>
+                <ResultsCounters/>
+          </main>
       <Footer />
     </>
   );

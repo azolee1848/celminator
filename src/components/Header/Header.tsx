@@ -1,12 +1,11 @@
-import React, {useContext} from 'react';
+import React, {useState} from 'react';
 import HeaderLogo from "./HeaderLogo";
 import HeaderCenter from "./HeaderCenter";
 import HeaderLogout from "./HeaderLogout";
-import {UserContext} from "../../context/UserContext";
 
 function Header() {
 
-    const user: boolean = useContext(UserContext);
+    const [user, setUser] = useState<boolean>(true);
 
     return (
         <header className="d-flex flex-row justify-content-between align-items-center text-primary bg-light">

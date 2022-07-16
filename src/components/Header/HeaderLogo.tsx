@@ -11,7 +11,7 @@ function HeaderLogo() {
         {user ? (
           <div id="logo">
             <a href="/">
-              <img id="logo__image" src={logo} alt="Logo image."/>
+              <img id="logo__image" src={logo} alt="Logo."/>
             </a>
             <a href="/">
               <span className="userNameShort">Zoltán</span>

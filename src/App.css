@@ -33,7 +33,26 @@ body {
   height: 0;
 }
 
-/* Header */
+.mediaContainer {
+  display: flex;
+  flex-basis: 100vw;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #6d91cb;
+  box-shadow: inset 0 0 3px 0 darkslategray;
+}
+
+.videoMarginBottom {
+  margin-bottom: 2rem;
+}
+
+.testBackgroundColor {
+  background-color: brown;
+}
+
+/* HeaderProps */
 
 header {
   font-size: 1rem;
@@ -112,19 +131,17 @@ header {
 .goalsContainer {
   background: url("./images/mountain.jpg") no-repeat;
   background-size: cover;
-  border: 1px solid #FFFFFF;
-  backdrop-filter: blur(40px);
+  box-shadow: inset 0 0 3px 0 darkslategray;
 }
 
 #goalsTitle {
   display: flex;
   flex-basis: 100vw;
   flex-direction: row;
-  flex-grow: 1;
   margin-bottom: 1rem;
 }
 
-.goalStripeContainer {
+.goalsStripeContainer {
   display: flex;
   align-items: center;
   height: 2rem;
@@ -132,7 +149,7 @@ header {
   margin-right: -1.3rem;
 }
 
-.goalStripeContent {
+.goalsStripeContent {
   display: flex;
   position: relative;
   left:-24px;
@@ -143,12 +160,12 @@ header {
   border-radius: 0 1rem 1rem 0;
 }
 
-.goalStripeText {
+.goalsStripeText {
   font-size: 0.8rem;
   margin: 0 1rem 0 0.3rem;
 }
 
-.goalStripeConcaveGraphic {
+.goalsStripeConcaveGraphic {
   position: relative;
   left: -16px;
   width: 2rem;
@@ -156,7 +173,7 @@ header {
   filter: invert(20%) sepia(1%) saturate(0%) hue-rotate(244deg) brightness(92%) contrast(75%);
 }
 
-.goalStripeHeadConcaveGraphic {
+.goalsStripeHeadConcaveGraphic {
   position: relative;
   left: -16px;
   width: 2rem;
@@ -164,7 +181,7 @@ header {
   filter: invert(17%) sepia(5%) saturate(729%) hue-rotate(131deg) brightness(92%) contrast(100%);
 }
 
-.goalStripeOuterCircle {
+.goalsStripeOuterCircle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,11 +191,11 @@ header {
   transform: scale(1.1);
 }
 
-.goalStripeHead {
+.goalsStripeHead {
   background-color: #222828;
 }
 
-.goalStripeInnerCircle {
+.goalsStripeInnerCircle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,7 +205,7 @@ header {
   background-color: #434343;
 }
 
-.goalStripeInnerNumber {
+.goalsStripeInnerNumber {
   font-size: 0.8rem;
 }
 
@@ -197,6 +214,57 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.pageTitle {
+  margin: 1rem 0 2.5rem 0;
+}
+
+.resultsCountersContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fae9e9;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.resultsCounterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1rem;
+  align-items: center;
+}
+
+.resultsCounterCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  box-shadow: inset 0 0 3px 0 #5f6cc0;
+  background-color: #5E86C8;
+  color: #e7e7e7;
+}
+
+.resultsCounterTitle {
+  color: darkslategray;
+}
+
+#Error404 {
+  display: flex;
+  flex-basis: 100vw;
+  height: 100vh;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #6060ff;
 }
 
 footer {

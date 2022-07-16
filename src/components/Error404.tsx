@@ -2,8 +2,8 @@ import React from 'react';
 
 function Error404() {
     return (
-        <div>
-            <p>Unfortunately this page not exists.</p>
+        <div id="Error404">
+            <h1 className="pageTitle">Page not found!</h1>
         </div>
     );
 }

@@ -1,6 +1,5 @@
-interface ResultsCounterProps {
+export default interface ResultsCounterProps {
     value: number,
-    title: string
+    title: string,
+    description: string
 }
-
-export default ResultsCounterProps;

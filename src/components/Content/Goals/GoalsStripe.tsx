@@ -2,15 +2,11 @@ import React from 'react';
 import concave from '../../../images/concave_subtract.svg';
 import GoalsStripeProps from "../../../Interfaces/GoalsStripeProps";
 
-function GoalsStripe(GoalsStripeProps: GoalsStripeProps) {
-
-    const circle = GoalsStripeProps.circle;
-    const number = GoalsStripeProps.number;
-    const text = GoalsStripeProps.text;
+function GoalsStripe({circle, number, text, onAddFunction /* onEditFunction, onDeleteFunction */}: GoalsStripeProps) {
 
     return (
         <>
-            <div className="goalsStripeContainer">
+            <div className="goalsStripeContainer" onClick={onAddFunction}>
                 { circle &&
                     (<div className="goalsStripeOuterCircle">
                     <div className="goalsStripeInnerCircle">

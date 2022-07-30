@@ -1,7 +1,8 @@
-interface GoalsStripeProps {
+export default interface GoalsStripeProps {
     circle: boolean,
     number?: number,
-    text: string
+    text: string,
+    onAddFunction?: () => void,
+    onEditFunction?: () => void,
+    onDeleteFunction?: () => void
 }
-
-export default GoalsStripeProps;

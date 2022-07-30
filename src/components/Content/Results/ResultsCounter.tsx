@@ -1,16 +1,13 @@
 import React from 'react';
 import ResultsCounterProps from "../../../Interfaces/ResultsCounterProps";
 
-function ResultsCounter(props:ResultsCounterProps) {
-
-    const value: number = props.value;
-    const title: string = props.title;
+export default function ResultsCounter({title, value, description}:ResultsCounterProps) {
 
     return (
       <>
         {value && (
           <>
-            <div className="resultsCounterContainer">
+            <div className="resultsCounterContainer" title={description}>
               <div className="resultsCounterCircle">
                 <span>{value}</span>
               </div>
@@ -22,5 +19,3 @@ function ResultsCounter(props:ResultsCounterProps) {
       </>
     );
 }
-
-export default ResultsCounter;
